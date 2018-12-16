@@ -1,18 +1,12 @@
-setup:
-	@echo 'making directory ./.execute/'
-	@subDir='./.execute/'; \
-	mkdir -p $${subDir}
+allFiles:
+	@echo 'building implementation.c functionInSrc.c'
+	@cc implementation.c headers/functionInSrc.c -o ./execute -I .
 	@echo
 
-source.txt:
-	@echo "building source.txt"
-	@echo "this is the source" > source.txt
+allFilesReversed:
+	@echo 'building functionInSrc.c implementation.c'
+	@cc headers/functionInSrc.c implementation.c -o ./execute -I .
 	@echo
 
-implementation: setup
-	@echo "building implementation.c"
-	@cc implementation.c -o ./.execute/implementation -I .
-	@echo
-
-main: implementation
+main: allFilesReversed
 	@echo 'sequence finished'

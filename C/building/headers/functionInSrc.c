@@ -1,3 +1,4 @@
 int multiplyByTwo(int num) {
-	return int doubleNum = num*2;
+	int doubleNum = num*2;
+	return doubleNum;
 }

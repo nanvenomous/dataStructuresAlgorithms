@@ -1,6 +1,6 @@
 #ifndef DECLARESRC
 #define DECLARESRC
 
-int multiplyByTwo;
+int multiplyByTwo(int num);
 
 #endif

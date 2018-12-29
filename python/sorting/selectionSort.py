@@ -24,6 +24,6 @@ def singleSort(x):
 		index += 1
 
 x = np.array([11, 16, 2, 8, 1, 9, 4, 7])
-print(x)
+# print(x)
 singleSort(x)
-print(x)
+# print(x)

@@ -27,6 +27,8 @@ def singleSort(x):
 # this script will use quicksort to sort the following array
 x = np.array([11, 16, 2, 8, 1, 9, 4, 7])
 
+print(x)
+
 singleSort(x)
 
 print(x)

@@ -1,4 +1,5 @@
 execute
+/**/execute
 env/
 __pycache__
 .vscode

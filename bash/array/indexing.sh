@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source ./declaration.sh
 
 echo '${array[@]}' 

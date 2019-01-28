@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#include "headers/macro.h"
-#include "headers/functionInHeader.h"
-#include "headers/declareSrc.h"
+#include "macro.h"
+#include "function.h"
+#include "declareSrc.h"
 
 #define NUM -7
 

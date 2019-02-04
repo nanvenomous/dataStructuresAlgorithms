@@ -14,6 +14,4 @@ int main() {
 		arrPtr[i] = 100*i;
 	}
 
-	// Print results of array
-	printArray(arr, len);
 }

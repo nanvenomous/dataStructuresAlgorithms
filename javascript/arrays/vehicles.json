@@ -1,0 +1,2354 @@
+{
+  "vehicles": {
+    "size": "5",
+    "vehicle": [
+      {
+        "vin": "1G1RD6E40CU109641",
+        "make": "Chevrolet",
+        "model": "Volt",
+        "year": "2012",
+        "manufacturer": "General Motors",
+        "bodyStyle": "CAR",
+        "phone": "+12487942410",
+        "unitType": "EMBEDDED",
+        "onstarStatus": "ACTIVE",
+        "nickname": "2012 Volt",
+        "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641",
+        "isInPreActivation": "false",
+        "insuranceInfo": {
+          "insuranceAgent": {
+            "phone": {}
+          }
+        },
+        "enrolledInContinuousCoverage": "false",
+        "commands": {
+          "command": [
+            {
+              "name": "cancelAlert",
+              "description": "Cancel a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/cancelAlert",
+              "isPrivSessionRequired": "true"
+						},
+            {
+              "name": "closeSunRoof",
+              "description": "Closes the sunroof.",
+              "url": "/api/v1/account/vehicles/1G1RD6E40CU109641/commands/closeSunRoof",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "openSunRoof",
+              "description": "Opens the sunroof.",
+              "url": "/api/v1/account/vehicles/1G1RD6E40CU109641/commands/openSunRoof",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "closeWindows",
+              "description": "Closes the windows.",
+              "url": "/api/v1/account/vehicles/1G1RD6E40CU109641/commands/closeWindows",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "openWindows",
+              "description": "Opens the windows.",
+              "url": "/api/v1/account/vehicles/1G1RD6E40CU109641/commands/openWindows",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "lockTrunk",
+              "description": "Locks the trunk.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/lockTrunk",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "unlockTrunk",
+              "description": "Unlocks the trunk.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/unlockTrunk",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "lockDoor",
+              "description": "Locks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/lockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "unlockDoor",
+              "description": "Unlocks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/unlockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "alert",
+              "description": "Triggers a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/alert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "start",
+              "description": "Remotely starts the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/start",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "cancelStart",
+              "description": "Cancels previous remote start command.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/cancelStart",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "diagnostics",
+              "description": "Retrieves diagnostic vehicle data.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/diagnostics",
+              "isPrivSessionRequired": "false",
+              "commandData": {
+                "supportedDiagnostics": {
+                  "supportedDiagnostic": [
+                    "LAST TRIP FUEL ECONOMY",
+                    "EV ESTIMATED CHARGE END",
+                    "EV BATTERY LEVEL",
+                    "OIL LIFE",
+                    "EV PLUG VOLTAGE",
+                    "LIFETIME FUEL ECON",
+                    "LIFETIME FUEL USED",
+                    "ODOMETER",
+                    "LIFETIME EV ODOMETER",
+                    "EV PLUG STATE",
+                    "EV CHARGE STATE",
+                    "TIRE PRESSURE",
+                    "LAST TRIP DISTANCE",
+                    "GET COMMUTE SCHEDULE",
+                    "GET CHARGE MODE",
+                    "EV SCHEDULED CHARGE START",
+                    "FUEL TANK INFO",
+                    "VEHICLE RANGE"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "sendTBTRoute",
+              "description": "Calculates route and initiate download of turn by turn directions to the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/sendTBTRoute",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "location",
+              "description": "Retrieves the vehicle's current location.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/location",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "chargeOverride",
+              "description": "Sends Charge Override",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/chargeOverride",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getChargingProfile",
+              "description": "Gets the Charge Mode",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/getChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getCommuteSchedule",
+              "description": "Gets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/getCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "sendNavDestination",
+              "description": "Calculate route and send it to the vehicle's nav unit.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/navUnit/commands/sendNavDestination",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "connect",
+              "description": "Initiates a connection to the vehicle",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/connect",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargingProfile",
+              "description": "Sets the charging profile",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/setChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setCommuteSchedule",
+              "description": "Sets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/setCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "stopFastCharge",
+              "description": "Stops the charge",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/stopFastCharge",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getRateSchedule",
+              "description": "Get EV Rate Schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/getRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "setRateSchedule",
+              "description": "Set EV Rate Schedule.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/setRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getChargerPowerLevel",
+              "description": " Get the charger level",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/getChargerPowerLevel",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargerPowerLevel",
+              "description": " Set the charger level",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/setChargerPowerLevel",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setPriorityCharging",
+              "description": "Set priority charging",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/setPriorityCharging",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getPriorityCharging",
+              "description": "Get priority charging",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RD6E40CU109641/commands/getPriorityCharging",
+              "isPrivSessionRequired": "false"
+            }
+          ]
+        },
+        "entitlements": {
+          "entitlement": [
+            {
+              "id": "AUTOFUEL",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "AYS_ENHANCED",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "COUPONS",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DATA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DEMO_MSG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DIAG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DMN",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ELEC_VEH",
+              "eligible": "false",
+              "ineligibleReasonCode": "Channel",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGER_POWER_LEVEL",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_ABORT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_COMPLETE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_DEFAULT_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_FAST_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_OVRD_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PLUGIN_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PRIORITY_CHARGING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_RATE_SCHEDULE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_WEATHER_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HARD_ACCL",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HARD_BRAKE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HFC",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "INTRUSION_DETECTION",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "LOCATION_MASK",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ODD_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "OVD",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "POI_SEARCH",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROACTIVE_ALERT",
+              "eligible": "true",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROGNOSTIC_ALERT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "REMOTE_START",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "RIB",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROADSIDE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR_UBI",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SUPERCRUISE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TBT_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "THEFT",
+              "eligible": "false",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "TRAILER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILERING_LIGHT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_CAMERA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS_RECONF",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+				},
+            {
+              "id": "WINDOWS_CONTROL",
+              "eligible": "true",
+              "notificationCapable": "true"
+						},
+            {
+              "id": "SUNROOF_CONTROL",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "TRUNK_LOCKUNLOCK",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "UNLOCK_LOCK",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_LOCATE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "WIFI",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            }
+          ]
+        },
+        "propulsionType": "EREV"
+      },
+      {
+        "vin": "1G1FX6S06H4139424",
+        "make": "Chevrolet",
+        "model": "Bolt EV",
+        "year": "2017",
+        "manufacturer": "General Motors",
+        "bodyStyle": "CAR",
+        "phone": "+13137194516",
+        "unitType": "EMBEDDED",
+        "onstarStatus": "ACTIVE",
+        "nickname": "EDT Bolt EV 1",
+        "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424",
+        "isInPreActivation": "false",
+        "insuranceInfo": {
+          "insuranceAgent": {
+            "phone": {}
+          }
+        },
+        "enrolledInContinuousCoverage": "false",
+        "commands": {
+          "command": [
+            {
+              "name": "cancelAlert",
+              "description": "Cancel a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/cancelAlert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getHotspotInfo",
+              "description": "Retrives the WiFi Hotspot info",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/hotspot/commands/getInfo",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "lockDoor",
+              "description": "Locks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/lockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "unlockDoor",
+              "description": "Unlocks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/unlockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "alert",
+              "description": "Triggers a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/alert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "start",
+              "description": "Remotely starts the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/start",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "cancelStart",
+              "description": "Cancels previous remote start command.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/cancelStart",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "diagnostics",
+              "description": "Retrieves diagnostic vehicle data.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/diagnostics",
+              "isPrivSessionRequired": "false",
+              "commandData": {
+                "supportedDiagnostics": {
+                  "supportedDiagnostic": [
+                    "HV BATTERY ESTIMATED CAPACITY",
+                    "LAST TRIP FUEL ECONOMY",
+                    "ENERGY EFFICIENCY",
+                    "HYBRID BATTERY MINIMUM TEMPERATURE",
+                    "EV ESTIMATED CHARGE END",
+                    "EV BATTERY LEVEL",
+                    "EV PLUG VOLTAGE",
+                    "HOTSPOT CONFIG",
+                    "ODOMETER",
+                    "HOTSPOT STATUS",
+                    "CHARGER POWER LEVEL",
+                    "LIFETIME EV ODOMETER",
+                    "EV PLUG STATE",
+                    "EV CHARGE STATE",
+                    "TIRE PRESSURE",
+                    "LAST TRIP DISTANCE",
+                    "GET COMMUTE SCHEDULE",
+                    "GET CHARGE MODE",
+                    "EV SCHEDULED CHARGE START",
+                    "VEHICLE RANGE"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "sendTBTRoute",
+              "description": "Calculates route and initiate download of turn by turn directions to the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/sendTBTRoute",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "location",
+              "description": "Retrieves the vehicle's current location.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/location",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "chargeOverride",
+              "description": "Sends Charge Override",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/chargeOverride",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getChargingProfile",
+              "description": "Gets the Charge Mode",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/getChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getCommuteSchedule",
+              "description": "Gets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/getCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "connect",
+              "description": "Initiates a connection to the vehicle",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/connect",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargingProfile",
+              "description": "Sets the charging profile",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/setChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setCommuteSchedule",
+              "description": "Sets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/setCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "stopFastCharge",
+              "description": "Stops the charge",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/stopFastCharge",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "enableTelemetry",
+              "description": "Enrolls a vehicle in telemetry.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/telemetry/commands/enable",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "disableTelemetry",
+              "description": "Unenrolls a vehicle from telemetry..",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/telemetry/commands/disable",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getHotspotStatus",
+              "description": "Retrive WiFi status",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/hotspot/commands/getStatus",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setHotspotInfo",
+              "description": "update the WiFi SSID and passPhrase",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/hotspot/commands/setInfo",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "disableHotspot",
+              "description": "Disable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/hotspot/commands/disable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "enableHotspot",
+              "description": "Enable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/hotspot/commands/enable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getRateSchedule",
+              "description": "Get EV Rate Schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/getRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "setRateSchedule",
+              "description": "Set EV Rate Schedule.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/setRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getChargerPowerLevel",
+              "description": " Get the charger level",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/getChargerPowerLevel",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargerPowerLevel",
+              "description": " Set the charger level",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/setChargerPowerLevel",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setPriorityCharging",
+              "description": "Set priority charging",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/setPriorityCharging",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getPriorityCharging",
+              "description": "Get priority charging",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S06H4139424/commands/getPriorityCharging",
+              "isPrivSessionRequired": "false"
+            }
+          ]
+        },
+        "modules": {
+          "module": [
+            {
+              "moduleType": "BYOM2",
+              "moduleCapability": "SF3"
+            }
+          ]
+        },
+        "entitlements": {
+          "entitlement": [
+            {
+              "id": "AUTOFUEL",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "AYS_ENHANCED",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "COUPONS",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DATA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DEMO_MSG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DIAG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DMN",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ELEC_VEH",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGER_POWER_LEVEL",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_ABORT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_COMPLETE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_DEFAULT_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_FAST_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_OVRD_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PLUGIN_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PRIORITY_CHARGING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_RATE_SCHEDULE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_WEATHER_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HARD_ACCL",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HARD_BRAKE",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HFC",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "INTRUSION_DETECTION",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "LOCATION_MASK",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ODD_ROUTING",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "OVD",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "POI_SEARCH",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROACTIVE_ALERT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROGNOSTIC_ALERT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "REMOTE_START",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "RIB",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROADSIDE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR_UBI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SUPERCRUISE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TBT_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TELEMETRY",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "THEFT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "TRAILER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILERING_LIGHT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_CAMERA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS_RECONF",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "UNLOCK_LOCK",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_LOCATE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "WIFI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            }
+          ]
+        },
+        "propulsionType": "BEV"
+      },
+      {
+        "vin": "1G1FX6S00H40072EX",
+        "make": "Chevrolet",
+        "model": "Bolt EV",
+        "year": "2017",
+        "manufacturer": "General Motors",
+        "bodyStyle": "CAR",
+        "phone": "+12483761963",
+        "unitType": "EMBEDDED",
+        "onstarStatus": "ACTIVE",
+        "nickname": "Bolt EV 2",
+        "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX",
+        "isInPreActivation": "false",
+        "insuranceInfo": {
+          "insuranceAgent": {
+            "phone": {}
+          }
+        },
+        "enrolledInContinuousCoverage": "false",
+        "commands": {
+          "command": [
+            {
+              "name": "cancelAlert",
+              "description": "Cancel a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/cancelAlert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getHotspotInfo",
+              "description": "Retrives the WiFi Hotspot info",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/hotspot/commands/getInfo",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "lockDoor",
+              "description": "Locks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/lockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "unlockDoor",
+              "description": "Unlocks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/unlockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "alert",
+              "description": "Triggers a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/alert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "start",
+              "description": "Remotely starts the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/start",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "cancelStart",
+              "description": "Cancels previous remote start command.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/cancelStart",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "diagnostics",
+              "description": "Retrieves diagnostic vehicle data.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/diagnostics",
+              "isPrivSessionRequired": "false",
+              "commandData": {
+                "supportedDiagnostics": {
+                  "supportedDiagnostic": [
+                    "HV BATTERY ESTIMATED CAPACITY",
+                    "LAST TRIP FUEL ECONOMY",
+                    "ENERGY EFFICIENCY",
+                    "HYBRID BATTERY MINIMUM TEMPERATURE",
+                    "EV ESTIMATED CHARGE END",
+                    "EV BATTERY LEVEL",
+                    "EV PLUG VOLTAGE",
+                    "HOTSPOT CONFIG",
+                    "ODOMETER",
+                    "HOTSPOT STATUS",
+                    "CHARGER POWER LEVEL",
+                    "LIFETIME EV ODOMETER",
+                    "EV PLUG STATE",
+                    "EV CHARGE STATE",
+                    "TIRE PRESSURE",
+                    "LAST TRIP DISTANCE",
+                    "GET COMMUTE SCHEDULE",
+                    "GET CHARGE MODE",
+                    "EV SCHEDULED CHARGE START",
+                    "VEHICLE RANGE"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "sendTBTRoute",
+              "description": "Calculates route and initiate download of turn by turn directions to the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/sendTBTRoute",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "location",
+              "description": "Retrieves the vehicle's current location.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/location",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "chargeOverride",
+              "description": "Sends Charge Override",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/chargeOverride",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getChargingProfile",
+              "description": "Gets the Charge Mode",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/getChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getCommuteSchedule",
+              "description": "Gets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/getCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "connect",
+              "description": "Initiates a connection to the vehicle",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/connect",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargingProfile",
+              "description": "Sets the charging profile",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/setChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setCommuteSchedule",
+              "description": "Sets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/setCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "stopFastCharge",
+              "description": "Stops the charge",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/stopFastCharge",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "enableTelemetry",
+              "description": "Enrolls a vehicle in telemetry.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/telemetry/commands/enable",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "disableTelemetry",
+              "description": "Unenrolls a vehicle from telemetry..",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/telemetry/commands/disable",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getHotspotStatus",
+              "description": "Retrive WiFi status",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/hotspot/commands/getStatus",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setHotspotInfo",
+              "description": "update the WiFi SSID and passPhrase",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/hotspot/commands/setInfo",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "disableHotspot",
+              "description": "Disable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/hotspot/commands/disable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "enableHotspot",
+              "description": "Enable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/hotspot/commands/enable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getRateSchedule",
+              "description": "Get EV Rate Schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/getRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "setRateSchedule",
+              "description": "Set EV Rate Schedule.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/setRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getChargerPowerLevel",
+              "description": " Get the charger level",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/getChargerPowerLevel",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargerPowerLevel",
+              "description": " Set the charger level",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/setChargerPowerLevel",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setPriorityCharging",
+              "description": "Set priority charging",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/setPriorityCharging",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getPriorityCharging",
+              "description": "Get priority charging",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1FX6S00H40072EX/commands/getPriorityCharging",
+              "isPrivSessionRequired": "false"
+            }
+          ]
+        },
+        "modules": {
+          "module": [
+            {
+              "moduleType": "BYOM2",
+              "moduleCapability": "SF3"
+            }
+          ]
+        },
+        "entitlements": {
+          "entitlement": [
+            {
+              "id": "AUTOFUEL",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "AYS_ENHANCED",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "COUPONS",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DATA",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DEMO_MSG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DIAG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DMN",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ELEC_VEH",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGER_POWER_LEVEL",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_ABORT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_COMPLETE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_DEFAULT_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_FAST_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_OVRD_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PLUGIN_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PRIORITY_CHARGING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_RATE_SCHEDULE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_WEATHER_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HARD_ACCL",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HARD_BRAKE",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HFC",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "INTRUSION_DETECTION",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "LOCATION_MASK",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ODD_ROUTING",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "OVD",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "POI_SEARCH",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROACTIVE_ALERT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROGNOSTIC_ALERT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "REMOTE_START",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "RIB",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROADSIDE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR_UBI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SUPERCRUISE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TBT_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TELEMETRY",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "THEFT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "TRAILER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILERING_LIGHT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_CAMERA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS_RECONF",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "UNLOCK_LOCK",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_LOCATE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "WIFI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            }
+          ]
+        },
+        "propulsionType": "BEV"
+      },
+      {
+        "vin": "1G6KG5RS2JU119848",
+        "make": "Cadillac",
+        "model": "CT6",
+        "year": "2018",
+        "manufacturer": "General Motors",
+        "bodyStyle": "CAR",
+        "phone": "+15865191582",
+        "unitType": "EMBEDDED",
+        "onstarStatus": "ACTIVE",
+        "nickname": "CT6 nickname",
+        "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848",
+        "isInPreActivation": "false",
+        "insuranceInfo": {
+          "insuranceAgent": {
+            "phone": {}
+          }
+        },
+        "enrolledInContinuousCoverage": "false",
+        "commands": {
+          "command": [
+            {
+              "name": "cancelAlert",
+              "description": "Cancel a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/cancelAlert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getHotspotInfo",
+              "description": "Retrives the WiFi Hotspot info",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/hotspot/commands/getInfo",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "lockDoor",
+              "description": "Locks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/lockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "unlockDoor",
+              "description": "Unlocks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/unlockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "alert",
+              "description": "Triggers a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/alert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "start",
+              "description": "Remotely starts the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/start",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "cancelStart",
+              "description": "Cancels previous remote start command.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/cancelStart",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "diagnostics",
+              "description": "Retrieves diagnostic vehicle data.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/diagnostics",
+              "isPrivSessionRequired": "false",
+              "commandData": {
+                "supportedDiagnostics": {
+                  "supportedDiagnostic": [
+                    "LAST TRIP FUEL ECONOMY",
+                    "TIRE PRESSURE",
+                    "LAST TRIP DISTANCE",
+                    "OIL LIFE",
+                    "LIFETIME FUEL ECON",
+                    "FUEL TANK INFO",
+                    "HOTSPOT CONFIG",
+                    "LIFETIME FUEL USED",
+                    "ODOMETER",
+                    "VEHICLE RANGE",
+                    "HOTSPOT STATUS"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "sendTBTRoute",
+              "description": "Calculates route and initiate download of turn by turn directions to the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/sendTBTRoute",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "location",
+              "description": "Retrieves the vehicle's current location.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/location",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "sendNavDestination",
+              "description": "Calculate route and send it to the vehicle's nav unit.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/navUnit/commands/sendNavDestination",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "connect",
+              "description": "Initiates a connection to the vehicle",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/commands/connect",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "enableTelemetry",
+              "description": "Enrolls a vehicle in telemetry.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/telemetry/commands/enable",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "disableTelemetry",
+              "description": "Unenrolls a vehicle from telemetry..",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/telemetry/commands/disable",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getHotspotStatus",
+              "description": "Retrive WiFi status",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/hotspot/commands/getStatus",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setHotspotInfo",
+              "description": "update the WiFi SSID and passPhrase",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/hotspot/commands/setInfo",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "disableHotspot",
+              "description": "Disable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/hotspot/commands/disable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "enableHotspot",
+              "description": "Enable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G6KG5RS2JU119848/hotspot/commands/enable",
+              "isPrivSessionRequired": "true"
+            }
+          ]
+        },
+        "modules": {
+          "module": [
+            {
+              "moduleType": "AMM",
+              "moduleCapability": "NA"
+            },
+            {
+              "moduleType": "HMI",
+              "moduleCapability": "NAV",
+              "moduleFeatures": {
+                "moduleFeatures": [
+                  {
+                    "featureName": "APPSHOP_SUPP"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "entitlements": {
+          "entitlement": [
+            {
+              "id": "AUTOFUEL",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "AYS_ENHANCED",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "COUPONS",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DATA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DEMO_MSG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DIAG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DMN",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ELEC_VEH",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGER_POWER_LEVEL",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_ABORT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_COMPLETE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_DEFAULT_CHRG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_FAST_CHRG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_OVRD_CHRG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PLUGIN_REMINDER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PRIORITY_CHARGING",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_RATE_SCHEDULE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_WEATHER_REMINDER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HARD_ACCL",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HARD_BRAKE",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "HFC",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "INTRUSION_DETECTION",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "LOCATION_MASK",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ODD_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "OVD",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "POI_SEARCH",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROACTIVE_ALERT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROGNOSTIC_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "REMOTE_START",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "RIB",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROADSIDE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR_UBI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SUPERCRUISE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TBT_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TELEMETRY",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "THEFT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "TRAILER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILERING_LIGHT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_CAMERA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS_RECONF",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "UNLOCK_LOCK",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_LOCATE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "WIFI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            }
+          ]
+        },
+        "propulsionType": "ICE"
+      },
+      {
+        "vin": "1G1RB6S5XJU127158",
+        "make": "Chevrolet",
+        "model": "Volt",
+        "year": "2018",
+        "manufacturer": "General Motors",
+        "bodyStyle": "CAR",
+        "phone": "+12482177661",
+        "unitType": "EMBEDDED",
+        "onstarStatus": "ACTIVE",
+        "nickname": "Volt2018",
+        "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158",
+        "isInPreActivation": "false",
+        "insuranceInfo": {
+          "insuranceAgent": {
+            "phone": {}
+          }
+        },
+        "enrolledInContinuousCoverage": "false",
+        "commands": {
+          "command": [
+            {
+              "name": "cancelAlert",
+              "description": "Cancel a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/cancelAlert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getHotspotInfo",
+              "description": "Retrives the WiFi Hotspot info",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/hotspot/commands/getInfo",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "lockDoor",
+              "description": "Locks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/lockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "unlockDoor",
+              "description": "Unlocks the doors.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/unlockDoor",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "alert",
+              "description": "Triggers a vehicle alert (honk horns/flash lights).",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/alert",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "start",
+              "description": "Remotely starts the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/start",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "cancelStart",
+              "description": "Cancels previous remote start command.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/cancelStart",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "diagnostics",
+              "description": "Retrieves diagnostic vehicle data.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/diagnostics",
+              "isPrivSessionRequired": "false",
+              "commandData": {
+                "supportedDiagnostics": {
+                  "supportedDiagnostic": [
+                    "LAST TRIP FUEL ECONOMY",
+                    "EV ESTIMATED CHARGE END",
+                    "EV BATTERY LEVEL",
+                    "OIL LIFE",
+                    "EV PLUG VOLTAGE",
+                    "LIFETIME FUEL ECON",
+                    "HOTSPOT CONFIG",
+                    "LIFETIME FUEL USED",
+                    "ODOMETER",
+                    "HOTSPOT STATUS",
+                    "LIFETIME EV ODOMETER",
+                    "EV PLUG STATE",
+                    "EV CHARGE STATE",
+                    "TIRE PRESSURE",
+                    "LAST TRIP DISTANCE",
+                    "GET COMMUTE SCHEDULE",
+                    "GET CHARGE MODE",
+                    "EV SCHEDULED CHARGE START",
+                    "FUEL TANK INFO",
+                    "VEHICLE RANGE"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "sendTBTRoute",
+              "description": "Calculates route and initiate download of turn by turn directions to the vehicle.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/sendTBTRoute",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "location",
+              "description": "Retrieves the vehicle's current location.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/location",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "chargeOverride",
+              "description": "Sends Charge Override",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/chargeOverride",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getChargingProfile",
+              "description": "Gets the Charge Mode",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/getChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "getCommuteSchedule",
+              "description": "Gets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/getCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "sendNavDestination",
+              "description": "Calculate route and send it to the vehicle's nav unit.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/navUnit/commands/sendNavDestination",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "connect",
+              "description": "Initiates a connection to the vehicle",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/connect",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setChargingProfile",
+              "description": "Sets the charging profile",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/setChargingProfile",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setCommuteSchedule",
+              "description": "Sets the commuting schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/setCommuteSchedule",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "stopFastCharge",
+              "description": "Stops the charge",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/stopFastCharge",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getHotspotStatus",
+              "description": "Retrive WiFi status",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/hotspot/commands/getStatus",
+              "isPrivSessionRequired": "false"
+            },
+            {
+              "name": "setHotspotInfo",
+              "description": "update the WiFi SSID and passPhrase",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/hotspot/commands/setInfo",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "disableHotspot",
+              "description": "Disable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/hotspot/commands/disable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "enableHotspot",
+              "description": "Enable WiFi Hotspot",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/hotspot/commands/enable",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "getRateSchedule",
+              "description": "Get EV Rate Schedule",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/getRateSchedule",
+              "isPrivSessionRequired": "true"
+            },
+            {
+              "name": "setRateSchedule",
+              "description": "Set EV Rate Schedule.",
+              "url": "https://api.gm.com/api/v1/account/vehicles/1G1RB6S5XJU127158/commands/setRateSchedule",
+              "isPrivSessionRequired": "true"
+            }
+          ]
+        },
+        "modules": {
+          "module": [
+            {
+              "moduleType": "HMI",
+              "moduleCapability": "NAV",
+              "moduleFeatures": {
+                "moduleFeatures": [
+                  {
+                    "featureName": "APPSHOP_SUPP"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "entitlements": {
+          "entitlement": [
+            {
+              "id": "AUTOFUEL",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "AYS_ENHANCED",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "BOUNDARY_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "COUPONS",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DATA",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DEMO_MSG",
+              "eligible": "false",
+              "ineligibleReasonCode": "Package",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DIAG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "DMN",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ELEC_VEH",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_ABORT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_CHARGE_COMPLETE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_DEFAULT_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_FAST_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_OVRD_CHRG",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_PLUGIN_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_RATE_SCHEDULE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_TRIP_PLAN",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "EV_WEATHER_REMINDER",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HARD_ACCL",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HARD_BRAKE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "HFC",
+              "eligible": "false",
+              "ineligibleReasonCode": "Region",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "INTRUSION_DETECTION",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "LOCATION_MASK",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "LOCATOR",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ODD_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "OVD",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "POI_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "POI_SEARCH",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "PROACTIVE_ALERT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "PROGNOSTIC_ALERT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "REMOTE_START",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "ROADSIDE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SMRT_DVR_UBI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "SUPERCRUISE",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TBT_ROUTING",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "THEFT",
+              "eligible": "true",
+              "notificationCapable": "true"
+            },
+            {
+              "id": "TRAILER",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILERING_LIGHT",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_CAMERA",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "TRAILER_TTPMS_RECONF",
+              "eligible": "false",
+              "ineligibleReasonCode": "Vehicle",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "UNLOCK_LOCK",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_ALERT",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "VEH_LOCATE",
+              "eligible": "true",
+              "notificationCapable": "false"
+            },
+            {
+              "id": "WIFI",
+              "eligible": "true",
+              "notificationCapable": "false"
+            }
+          ]
+        },
+        "propulsionType": "EREV"
+      }
+    ]
+  }
+}

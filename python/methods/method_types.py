@@ -19,13 +19,13 @@ class DecoratorExample:
 	def instance_method(self):
 		print('I\'m an instance method!')
 		print('I can access attributes for example, self.name is: ' + self.name)
-		print('I can also call other class methods: ')
+		print('I can also call other methods in this class: ')
 		self._private_static_method()
 
 	@classmethod
 	def class_method(cls):
 		print('I\'m a class method!')
-		print('I can only call other class methods: ')
+		print('I can only call other methods in this class: ')
 		cls._private_static_method()
 
 DecoratorExample.static_method()

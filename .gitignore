@@ -3,3 +3,4 @@ execute
 env/
 __pycache__
 .vscode
+/**/node_modules

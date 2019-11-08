@@ -3,14 +3,11 @@ import java.util.Arrays;
 // A Class that represents use-defined expception 
 class TwoSum { 
   public int[] twoSum(int[] nums, int target) {
-    // Solution assuming no negative numbers
     for (int i = 0; i < nums.length; i++) {
-      if (nums[i] <= target) {
-        for (int j = i + 1; j < nums.length; j++) {
-          if (nums[i] + nums[j] == target) {
-            int ans[] = new int[]{i, j};
-            return ans;
-          }
+      for (int j = i + 1; j < nums.length; j++) {
+        if (nums[i] + nums[j] == target) {
+          int ans[] = new int[]{i, j};
+          return ans;
         }
       }
     }

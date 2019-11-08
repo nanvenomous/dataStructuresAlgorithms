@@ -11,11 +11,12 @@ class TwoSum {
         }
       }
     }
-    return new int[2];
+    throw new IllegalArgumentException("no two values in the array sum to the target");
   } 
   public static void main(String args[]) { 
     // int[] nums = {2, 7, 11, 15};
-    int[] nums = {0, 4, 3, 0};
+    // int[] nums = {0, 4, 3, 0};
+    int[] nums = {1, 4, 3, 0};
     int target = 0;
     TwoSum sln = new TwoSum();
     int[] ans = sln.twoSum(nums, target);

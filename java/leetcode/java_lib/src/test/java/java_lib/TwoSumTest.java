@@ -1,4 +1,4 @@
-package two_sum;
+package java_lib;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

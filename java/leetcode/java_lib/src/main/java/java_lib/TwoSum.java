@@ -1,4 +1,4 @@
-package two_sum;
+package java_lib;
 
 import java.util.Arrays;
 

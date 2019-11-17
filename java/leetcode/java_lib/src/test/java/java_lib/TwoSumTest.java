@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TwoSumTest {
     @Test
-    public void should_return_set_one() {
+    public void should_sum_positive_integers() {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
         int[] sln = {0, 1};
@@ -41,7 +41,6 @@ public class TwoSumTest {
 
     @Test
     public void should_fail_if_no_solution() {
-        System.out.println("Running test");
         int[] nums = {1, 4, 3, 0};
         int target = 0;
         TwoSum twosum = new TwoSum();

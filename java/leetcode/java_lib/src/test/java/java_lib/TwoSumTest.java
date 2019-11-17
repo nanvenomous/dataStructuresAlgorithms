@@ -3,9 +3,7 @@ package java_lib;
 import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
-//import static org.junit.Assert.*;
 
 
 public class TwoSumTest {

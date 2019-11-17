@@ -17,6 +17,7 @@ repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -27,9 +28,11 @@ dependencies {
     implementation("com.google.guava:guava:27.0.1-jre")
 
     // Use JUnit test framework
-    testImplementation("junit:junit:4.12")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.4.2")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.4.2")
 }
 
 tasks.named<Test>("test") {
+    useJUnitPlatform()
     testLogging.exceptionFormat = TestExceptionFormat.FULL
 }

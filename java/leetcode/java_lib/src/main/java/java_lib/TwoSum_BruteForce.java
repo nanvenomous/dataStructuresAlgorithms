@@ -3,7 +3,7 @@ package java_lib;
 import java.util.Arrays;
 
 // A Class that represents use-defined expception 
-class TwoSum { 
+class TwoSum_BruteForce {
   public int[] run(int[] nums, int target) {
     for (int i = 0; i < nums.length; i++) {
       for (int j = i + 1; j < nums.length; j++) {

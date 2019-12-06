@@ -15,7 +15,15 @@ public class ReverseIntegerTest {
 
     private void assertReversesInteger(int reverse, int forward) {
         int ans = subject.run(forward);
-        assertEquals(ans, reverse);
+        assertEquals(reverse, ans);
+    }
+
+    @Test
+    public void should_return_zero_when_overflow() {
+        int forward = 1534236469;
+        int reverse = 0;
+        int ans = subject.run(forward);
+        assertEquals(reverse, ans);
     }
 
     @Test

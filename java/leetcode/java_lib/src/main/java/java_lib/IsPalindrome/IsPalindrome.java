@@ -4,11 +4,13 @@ class IsPalindrome {
 	public boolean isEven;
 	int numDigits;
 	int forward;
+	int reversed = 0;
 
 	public boolean run(int x) {
 		if (x < 0) {return false;}
 		forward = x;
-		return false;
+		partial_reverse();
+		return (reversed == forward);
 	}
 
 	public void digits_to_reverse() {
@@ -18,21 +20,18 @@ class IsPalindrome {
 		numDigits /= 2;
 	}
 
-	public int partial_reverse() {
-		int reversed = 0;
-
+	public void partial_reverse() {
 		digits_to_reverse();
 		while (numDigits > 0) {
-			reversed = safe_increment_reversed(reversed);
+			safe_increment_reversed();
 			forward /= 10;
 			numDigits--;
 		}
-		return reversed;
+		if (!isEven) {forward /= 10;}
 	}
 
-	public int safe_increment_reversed(int reversed) {
+	public void safe_increment_reversed() {
 		reversed *= 10;
 		reversed += forward % 10;
-		return reversed;
 	}
 }

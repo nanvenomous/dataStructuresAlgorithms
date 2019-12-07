@@ -52,8 +52,15 @@ public class IsPalindromeTest {
 	}
 
 	@Test
-	public void should_determine_is_palindrome() {
+	public void should_determine_odd_is_palindrome() {
 		int num = 1234321;
+		boolean isPal = true;
+		assert_determines_palindrome(num, isPal);
+	}
+
+	@Test
+	public void should_determine_even_is_palindrome() {
+		int num = 123321;
 		boolean isPal = true;
 		assert_determines_palindrome(num, isPal);
 	}
@@ -65,10 +72,17 @@ public class IsPalindromeTest {
 		assert_determines_palindrome(num, isPal);
 	}
 
+	@Test
+	public void should_classify_zero_as_a_palindrome() {
+		int num = 0;
+		boolean isPal = true;
+		assert_determines_palindrome(num, isPal);
+	}
+
 	private void assertReversesInteger(int reverse, int forward) {
 		subject.forward = forward;
-		int ans = subject.partial_reverse();
-		assertEquals(reverse, ans);
+		subject.partial_reverse();
+		assertEquals(reverse, subject.reversed);
 	}
 
 	@Test

@@ -1,16 +1,19 @@
 package java_lib.IsPalindrome;
 
 class IsPalindrome {
-	double p_overflow = Math.pow(2, 31) - 1;
-	double n_overflow = Math.pow(-2, 31);
-	int remainder;
+	public boolean isEven;
+	int numDigits;
 
 	public boolean run(int x) {
-		return true;
+		if (x < 0) {return false;}
+		return false;
 	}
 
-	public int digits_to_reverse(int pal) {
-		return (int)Math.log10(pal);
+	public void digits_to_reverse(int pal) {
+		numDigits = (int)Math.log10(pal);
+		isEven = !(0 == numDigits % 2);
+		if (isEven) {numDigits += 1;}
+		numDigits /= 2;
 	}
 
 	public int partial_reverse(int forward) {
@@ -24,12 +27,8 @@ class IsPalindrome {
 	}
 
 	public int safe_increment_reversed(int reversed, int forward) {
-		remainder = forward % 10;
-		if ((n_overflow - remainder)/10 > reversed || reversed > (p_overflow - remainder)/10) {
-			return 0;
-		}
 		reversed *= 10;
-		reversed += remainder;
+		reversed += forward % 10;
 		return reversed;
 	}
 }

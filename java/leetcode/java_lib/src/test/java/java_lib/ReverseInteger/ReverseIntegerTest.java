@@ -19,18 +19,18 @@ public class ReverseIntegerTest {
     }
 
     @Test
+    public void should_reverse() {
+        int forward = 123;
+        int reverse = 321;
+        assertReversesInteger(reverse, forward);
+    }
+
+    @Test
     public void should_return_zero_when_overflow() {
         int forward = 1534236469;
         int reverse = 0;
         int ans = subject.run(forward);
         assertEquals(reverse, ans);
-    }
-
-    @Test
-    public void should_reverse() {
-        int forward = 123;
-        int reverse = 321;
-        assertReversesInteger(reverse, forward);
     }
 
     @Test

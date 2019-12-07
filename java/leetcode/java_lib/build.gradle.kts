@@ -38,14 +38,14 @@ tasks.test {
 
     testLogging {
         lifecycle {
-            events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
+//            events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
             exceptionFormat = TestExceptionFormat.FULL
-            showExceptions = true
-            showCauses = true
-            showStackTraces = true
-            showStandardStreams = true
+//            showExceptions = true
+//            showCauses = true
+//            showStackTraces = true
+//            showStandardStreams = true
         }
-        info.events = lifecycle.events
-        info.exceptionFormat = lifecycle.exceptionFormat
+//        info.events = lifecycle.events
+//        info.exceptionFormat = lifecycle.exceptionFormat
     }
 }

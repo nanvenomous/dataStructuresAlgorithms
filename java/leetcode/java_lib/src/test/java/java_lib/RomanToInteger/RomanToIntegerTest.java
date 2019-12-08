@@ -15,6 +15,11 @@ public class RomanToIntegerTest {
 		subject = new RomanToInteger();
 	}
 
+	@Test
+	public void should_correctly_set_the_conversion_map() {
+		assertEquals(50, subject.conversion.get('L'));
+	}
+
 	private void assert_converts_roman_numeral_to_integer(String roman, int expectedNumber) {
 		int answer = subject.run(roman);
 		assertEquals(expectedNumber, answer);

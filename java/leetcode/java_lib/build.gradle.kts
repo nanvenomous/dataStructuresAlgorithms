@@ -33,6 +33,11 @@ dependencies {
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.4.2")
 }
 
+tasks.withType<JavaCompile> {
+    val compilerArgs = options.compilerArgs
+    compilerArgs.add("-Xlint:unchecked")
+}
+
 tasks.test {
     useJUnitPlatform()
 

@@ -7,10 +7,9 @@ class RomanToInteger {
 	int num;
 	int prevNum = 0;
 	int value = 0;
-	public HashMap<Character, Integer> conversion;
+	public HashMap<Character, Integer> conversion = new HashMap<Character, Integer>();
 
 	public RomanToInteger() {
-		conversion = new HashMap();
 		conversion.put('I', 1);
 		conversion.put('V', 5);
 		conversion.put('X', 10);

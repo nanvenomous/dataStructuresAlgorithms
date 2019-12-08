@@ -4,6 +4,8 @@ import java.util.HashMap;
 class RomanToInteger {
 	String roman;
 	char let;
+	int num;
+	int prevNum = 0;
 	int value = 0;
 	public HashMap<Character, Integer> conversion;
 
@@ -20,9 +22,19 @@ class RomanToInteger {
 
 	public int run(String s) {
 		roman = s;
-		// while (roman.length() > 0) {
-		// }
-		return 0;
+		while (roman.length() > 0) {
+			getAndRemoveLastChar();
+			num = conversion.get(let);
+			if (num < prevNum) {
+				value += prevNum - num;
+				prevNum = 0;
+			} else {
+				value += prevNum;
+				prevNum = num;
+			}
+		}
+		value += prevNum;
+		return value;
 	}
 
 	public void getAndRemoveLastChar() {

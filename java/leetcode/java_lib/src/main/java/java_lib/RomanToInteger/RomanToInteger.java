@@ -1,5 +1,5 @@
 package java_lib.RomanToInteger;
-import java.util.HashMap;
+import java.util.Arrays;
 
 class RomanToInteger {
 	String roman;
@@ -7,23 +7,24 @@ class RomanToInteger {
 	int num;
 	int prevNum = 0;
 	int value = 0;
-	public HashMap<Character, Integer> conversion = new HashMap<Character, Integer>();
+	int[] convert = new int[26];
 
-	public RomanToInteger() {
-		conversion.put('I', 1);
-		conversion.put('V', 5);
-		conversion.put('X', 10);
-		conversion.put('L', 50);
-		conversion.put('C', 100);
-		conversion.put('D', 500);
-		conversion.put('M', 1000);
+	void convert_init() {
+		convert['I' - 'A'] = 1;
+		convert['V' - 'A'] = 5;
+		convert['X' - 'A'] = 10;
+		convert['L' - 'A'] = 50;
+		convert['C' - 'A'] = 100;
+		convert['D' - 'A'] = 500;
+		convert['M' - 'A'] = 1000;
 	}
 
 	public int run(String s) {
+		convert_init();
 		roman = s;
 		while (roman.length() > 0) {
 			getAndRemoveLastChar();
-			num = conversion.get(let);
+			num = convert[let - 'A'];
 			if (num < prevNum) {
 				value += prevNum - num;
 				prevNum = 0;

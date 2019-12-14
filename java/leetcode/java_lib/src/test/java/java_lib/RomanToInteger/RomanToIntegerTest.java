@@ -17,7 +17,8 @@ public class RomanToIntegerTest {
 
 	@Test
 	public void should_correctly_set_the_conversion_map() {
-		assertEquals(50, subject.conversion.get('L'));
+		subject.convert_init();
+		assertEquals(50, subject.convert['L' - 'A']);
 	}
 
 	private void assert_converts_roman_numeral_to_integer(String roman, int expectedNumber) {
@@ -26,9 +27,23 @@ public class RomanToIntegerTest {
 	}
 
 	@Test
-	public void should_get_correct_digits_to_reverse_odd() {
+	public void should_get_correct_digits_difficult() {
 		String roman = "MCMXCIV";
 		int number = 1994;
+		assert_converts_roman_numeral_to_integer(roman, number);
+	}
+
+	@Test
+	public void should_get_correct_digits_medium() {
+		String roman = "LVIII";
+		int number = 58;
+		assert_converts_roman_numeral_to_integer(roman, number);
+	}
+
+	@Test
+	public void should_get_correct_digits_simple() {
+		String roman = "III";
+		int number = 3;
 		assert_converts_roman_numeral_to_integer(roman, number);
 	}
 

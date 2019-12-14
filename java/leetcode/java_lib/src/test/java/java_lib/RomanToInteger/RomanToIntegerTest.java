@@ -17,7 +17,6 @@ public class RomanToIntegerTest {
 
 	@Test
 	public void should_correctly_set_the_conversion_map() {
-		subject.convert_init();
 		assertEquals(50, subject.convert['L' - 'A']);
 	}
 
@@ -45,20 +44,5 @@ public class RomanToIntegerTest {
 		String roman = "III";
 		int number = 3;
 		assert_converts_roman_numeral_to_integer(roman, number);
-	}
-
-	private void assert_collects_last_character(String roman, String shortened, char removed) {
-		subject.roman = roman;
-		subject.getAndRemoveLastChar();
-		assertEquals(shortened, subject.roman);
-		assertEquals(removed, subject.let);
-	}
-
-	@Test
-	public void should_remove_and_collect_last_character() {
-		String roman = "MCMXCIV";
-		String shortened = "MCMXCI";
-		char removed = 'V';
-		assert_collects_last_character(roman, shortened, removed);
 	}
 }

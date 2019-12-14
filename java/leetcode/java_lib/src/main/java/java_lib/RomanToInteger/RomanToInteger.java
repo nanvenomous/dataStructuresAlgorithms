@@ -2,14 +2,9 @@ package java_lib.RomanToInteger;
 import java.util.Arrays;
 
 class RomanToInteger {
-	String roman;
-	char let;
-	int num;
-	int prevNum = 0;
-	int value = 0;
-	int[] convert = new int[26];
+	static final int[] convert = new int[26];
 
-	void convert_init() {
+	static {
 		convert['I' - 'A'] = 1;
 		convert['V' - 'A'] = 5;
 		convert['X' - 'A'] = 10;
@@ -20,10 +15,13 @@ class RomanToInteger {
 	}
 
 	public int run(String s) {
-		convert_init();
-		roman = s;
-		while (roman.length() > 0) {
-			getAndRemoveLastChar();
+		char[] roman = s.toCharArray();
+		char let;
+		int num;
+		int prevNum = 0;
+		int value = 0;
+		for (int i=roman.length - 1; i >= 0; i--) {
+			let = roman[i];
 			num = convert[let - 'A'];
 			if (num < prevNum) {
 				value += prevNum - num;
@@ -35,10 +33,5 @@ class RomanToInteger {
 		}
 		value += prevNum;
 		return value;
-	}
-
-	public void getAndRemoveLastChar() {
-		let = roman.charAt(roman.length() - 1);
-		roman = roman.substring(0, roman.length() - 1);
 	}
 }

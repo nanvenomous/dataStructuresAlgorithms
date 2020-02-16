@@ -47,4 +47,31 @@ echo '#!/bin/bash' >> file.txt
 
 cat file1.txt file2.txt > file3.txt
 # creates file3.txt as a combination of the first two
+
+list1 < file
+# feed file to list as input
 ```
+
+# Testing Expressions
+* [expression] the old way
+* [[expression]] the new way
+
+| test | meaning |
+|---|---|
+| [[-n string]] | string is non empty |
+| [[-z string]] | string is empty |
+| [[string1 == string2]] | the strings are equal |
+| [[string1 != string2]] | the strings are not equal |
+| [[string =~ regex]] | the string matches regular expression |
+| [[-e file]] | file exists |
+| [[-f file]] | file is a regular file |
+| [[-d file]] | file is a directory |
+| [[-t fd]] | fd is open and refers to a terminal |
+
+# Pattern Matching
+* \* is any string including null
+* \? is any single character
+* [x-z] matches any character from x to z
+
+# Parameter Expansion
+![image for param expansion](rsrc/paramExpansion.png)

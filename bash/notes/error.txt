@@ -1,0 +1,4 @@
+/usr/bin/ls: cannot access 'what': No such file or directory
+.:
+error.txt
+shell_and_scripts.md

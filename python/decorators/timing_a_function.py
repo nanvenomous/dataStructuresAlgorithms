@@ -12,6 +12,7 @@ def calculate_time(func):
   
         # storing time before function execution 
         begin = time.time() 
+        print('function took', args)
           
         func(*args, **kwargs) 
   

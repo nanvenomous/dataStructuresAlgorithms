@@ -1,0 +1,16 @@
+{
+  "name": "javascript",
+  "version": "0.0.0",
+  "description": "just a js playground for asking questions and having fun",
+  "main": "dates.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Matthew Garelli",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.8.6",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
+  }
+}

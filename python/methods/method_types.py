@@ -2,37 +2,31 @@ def t_print(*args, **kwargs): print('\t', *args, **kwargs)
 
 class DecoratorExample:
 	def __init__(self):
-		""" Example Setup """
-		self.name = 'Decorator_Example'
+		self.one = 1
 
 	@staticmethod
 	def _private_static_method():
-		t_print('I\'m a private static method!')
-		t_print('Didn\'t need any attributes for this')
-		t_print('Also only accessible within this class')
+		return 1
  
 	@staticmethod
-	def static_method():
-		print('I\'m a static method!')
-		print('Didn\'t need any attributes for this')
+	def static_method_attempt_attribute_access():
+		return self.one
+
+	@staticmethod
+	def static_method_attempt_other_method_access():
+		return self.instance_method()
  
 	def instance_method(self):
-		print('I\'m an instance method!')
-		print('I can access attributes for example, self.name is: ' + self.name)
-		print('I can also call other methods in this class: ')
-		self._private_static_method()
+		return self._private_static_method() + self.one
 
 	@classmethod
 	def class_method(cls):
-		print('I\'m a class method!')
-		print('I can only call other methods in this class: ')
-		cls._private_static_method()
+		return cls._private_static_method()
 
-DecoratorExample.static_method()
-print()
+	@classmethod
+	def class_method_calling_instance_method(cls):
+		return cls.instance_method()
 
-de = DecoratorExample()
-de.instance_method()
-print()
-
-de.class_method()
+	@classmethod
+	def class_method_attempt_attribute_access(cls):
+		return cls.one

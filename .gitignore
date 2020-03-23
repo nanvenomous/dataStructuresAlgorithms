@@ -1,6 +1,6 @@
 execute
 /**/execute
-env/
+**/env/
 __pycache__
 .vscode
 /**/node_modules

@@ -1,10 +1,14 @@
 import pytest
 import re
+import os, sys
 
 # MetaCharacters (Need to be escaped):
 # . ^ $ * + ? { } [ ] \ | ( )
 
-file = open('example.txt', 'r')
+current_directory = os.path.dirname(os.path.abspath(__file__))
+current_file = os.path.join(current_directory, 'example.txt')
+
+file = open(current_file, 'r')
 mock_text = file.read()
 
 mock_names = [

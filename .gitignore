@@ -5,3 +5,4 @@ execute
 .vscode
 /**/node_modules
 *.class
+**/.mypy_cache/

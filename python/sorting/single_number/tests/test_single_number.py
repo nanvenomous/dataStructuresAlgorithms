@@ -5,10 +5,44 @@ import random
 # for no output
 # pytest -v
 
-from ..single_number import SingleNumberBruteIter, SingleNumberBruteSpace
+from ..single_number import SingleNumberBruteSpace, SingleNumberHashTable
 
 mock_list = [1, 2, 4, 1, 2]
 
+class TestSingleNumberHashTable:
+	@classmethod
+	def setup_method(cls):
+		cls.subject = SingleNumberHashTable()
+
+	def test_returns_simple_single_number(self):
+		assert 1 == self.subject.singleNumber([1])
+
+	def test_randomized_returns_simple_single_number(self):
+		print()
+		for _ in range(100):
+			random.shuffle(mock_list)
+			print(mock_list)
+			assert 4 == self.subject.singleNumber(mock_list)
+
+@pytest.mark.skip()
+class TestSingleNumber:
+	@classmethod
+	def setup_method(cls):
+		cls.subject = SingleNumberBruteSpace()
+
+	def test_returns_simple_single_number(self):
+		assert 1 == self.subject.singleNumber([1])
+
+	def test_randomized_returns_simple_single_number(self):
+		print()
+		subj = SingleNumberBruteSpace()
+		for _ in range(100):
+			random.shuffle(mock_list)
+			print(mock_list)
+			subj.singleNumber(mock_list)
+			assert [4] == subj.seen
+
+@pytest.mark.skip()
 class TestConfirmRemove:
 	@classmethod
 	def setup_method(cls):
@@ -34,21 +68,3 @@ class TestConfirmRemove:
 		self.subject.seen = []
 		self.subject.confirm_remove()
 		assert [4] == self.subject.seen
-
-class TestSingleNumber:
-	@classmethod
-	def setup_method(cls):
-		cls.subject = SingleNumberBruteSpace()
-
-	def test_returns_simple_single_number(self):
-		assert 1 == self.subject.singleNumber([1])
-
-	def test_randomized_returns_simple_single_number(self):
-		print()
-		subj = SingleNumberBruteSpace()
-		for _ in range(100):
-			# subj.seen = []
-			random.shuffle(mock_list)
-			print(mock_list)
-			subj.singleNumber(mock_list)
-			assert [4] == subj.seen

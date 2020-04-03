@@ -4,15 +4,15 @@ class HappyNumberOptimize:
 		self.next = next
 		self.history = []
 
-	def add_squared_digits(self):
+	def add_squared_digits(self, cur):
 		self.next = 0
-		while self.cur != 0:
-			self.next += (self.cur % 10)**2
-			self.cur = int(self.cur/10)
+		while cur != 0:
+			self.next += (cur % 10)**2
+			cur = int(cur/10)
 
 	def loop_repeats_once(self):
 		for elem in self.history[:-1]:
-			if elem == self.history[-1]:
+			if elem == self.cur:
 				return True
 		return False
 
@@ -21,9 +21,9 @@ class HappyNumberOptimize:
 		self.history = []
 		while self.cur != 1:
 			self.history.append(self.cur)
-			self.add_squared_digits()
-			self.cur = self.next
+			self.add_squared_digits(self.cur)
 			if self.loop_repeats_once(): return False
+			self.cur = self.next
 		return True
 
 class HappyNumber:

@@ -1,3 +1,31 @@
+class HappyNumberOptimize:
+	def __init__(self, cur=None, next=None):
+		self.cur = cur
+		self.next = next
+		self.history = []
+
+	def add_squared_digits(self):
+		self.next = 0
+		while self.cur != 0:
+			self.next += (self.cur % 10)**2
+			self.cur = int(self.cur/10)
+
+	def loop_repeats_once(self):
+		for elem in self.history[:-1]:
+			if elem == self.history[-1]:
+				return True
+		return False
+
+	def isHappy(self, n: int) -> bool:
+		self.cur = n
+		self.history = []
+		while self.cur != 1:
+			self.history.append(self.cur)
+			self.add_squared_digits()
+			self.cur = self.next
+			if self.loop_repeats_once(): return False
+		return True
+
 class HappyNumber:
 	def __init__(self, cur=None, next=None):
 		self.cur = cur

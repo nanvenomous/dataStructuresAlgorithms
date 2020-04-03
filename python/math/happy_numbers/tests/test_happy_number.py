@@ -1,11 +1,11 @@
 import pytest
-from ..happy_number import HappyNumber
+from ..happy_number import HappyNumber, HappyNumberOptimize
 
 class TestHappyNumber:
 
 	@classmethod
 	def setup_method(cls):
-		cls.subject = HappyNumber()
+		cls.subject = HappyNumberOptimize()
 
 	def test_identifies_happy_number(self):
 		assert True == self.subject.isHappy(19)

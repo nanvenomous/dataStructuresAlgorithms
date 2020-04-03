@@ -1,4 +1,28 @@
 from typing import List
+from collections import defaultdict
+
+class SingleNumberHashDefault:
+	def __init__(self, seen={}):
+		self.seen = seen
+		self.num = None
+
+	def in_loop(self):
+		self.seen[self.num] += 1
+
+	def get_key(self):
+		for key in list(self.seen):
+			if self.seen[key] == 1:
+				return key
+
+	def singleNumber(self, nums: List[int]) -> int:
+		self.num = None
+		self.seen = defaultdict(lambda: 0)
+		j = 0
+		while j < len(nums):
+			self.num = nums[j]
+			self.in_loop()
+			j += 1
+		return self.get_key()
 
 class SingleNumberBruteIter:
 	def singleNumber(self, nums: List[int]) -> int:

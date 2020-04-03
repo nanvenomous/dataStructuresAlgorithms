@@ -5,14 +5,14 @@ import random
 # for no output
 # pytest -v
 
-from ..single_number import SingleNumberBruteSpace, SingleNumberHashTable
+from ..single_number import SingleNumberBruteSpace, SingleNumberHashTable, SingleNumberHashDefault
 
 mock_list = [1, 2, 4, 1, 2]
 
 class TestSingleNumberHashTable:
 	@classmethod
 	def setup_method(cls):
-		cls.subject = SingleNumberHashTable()
+		cls.subject = SingleNumberHashDefault()
 
 	def test_returns_simple_single_number(self):
 		assert 1 == self.subject.singleNumber([1])

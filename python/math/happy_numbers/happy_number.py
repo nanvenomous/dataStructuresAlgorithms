@@ -10,19 +10,14 @@ class HappyNumberOptimize:
 			self.next += (cur % 10)**2
 			cur = int(cur/10)
 
-	def loop_repeats_once(self):
-		for elem in self.history[:-1]:
-			if elem == self.cur:
-				return True
-		return False
-
 	def isHappy(self, n: int) -> bool:
 		self.cur = n
 		self.history = []
 		while self.cur != 1:
-			self.history.append(self.cur)
 			self.add_squared_digits(self.cur)
-			if self.loop_repeats_once(): return False
+			for elem in self.history:
+				if elem == self.cur: return False
+			self.history.append(self.cur)
 			self.cur = self.next
 		return True
 

@@ -1,4 +1,6 @@
-# Deque
+# Data Structures
+
+### Deque
 ```
 from collections import deque
 dq = deque([1, 2, 3])
@@ -22,7 +24,7 @@ dq.extend([4, 5])
 dq.extendleft([0, -1])
 ```
 
-# Dictionary
+### Dictionary
 ```
 from collections import defaultdict
 
@@ -30,7 +32,7 @@ d = dict() # {}
 dd = defaultdict(lambda: return 0)
 ```
 
-# List / Stack
+### List / Stack
 ```
 l = list() # []
 ```
@@ -51,7 +53,13 @@ l.append(val) # at end
 val = l.pop()
 ```
 
-# Queue
+* reorder a list from indices
+```
+new_order = [3, 2, 0, 9..., n] # where n is nuber of indices in the list
+l[:] = [l[i] for i in new_order]
+```
+
+### Queue
 ```
 from queue import Queue
 q = Queue()
@@ -63,7 +71,9 @@ q.put(None)
 for qget in iter(q.get, None): pass
 ```
 
-# Statements
+# Language
+
+### Statements
 
 * conditional assignments
 ```
@@ -72,9 +82,24 @@ val = 0 if b else 1
 print(val) # 1
 ```
 
-# Variables
+### Variables
 
 * value swap
 ```
 val1, val2 = val2, val1
+```
+
+# Libraries
+
+### numpy
+
+* linspace
+```
+arr = np.linspace(0, end, end + 1) # increments of 1
+arr = np.linspace(0, end, (end*2) + 1) # increments of 0.5
+```
+
+* slicing
+```
+new_arr = arr[1::2] # every second element of the array until the end starting at 1
 ```

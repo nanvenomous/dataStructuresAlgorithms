@@ -24,6 +24,11 @@ dq.extend([4, 5])
 dq.extendleft([0, -1])
 ```
 
+* clear
+```
+dq.clear()
+```
+
 ### Dictionary
 ```
 from collections import defaultdict

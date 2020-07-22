@@ -24,6 +24,11 @@ dq.extend([4, 5])
 dq.extendleft([0, -1])
 ```
 
+* clear
+```
+dq.clear()
+```
+
 ### Dictionary
 ```
 from collections import defaultdict
@@ -72,6 +77,12 @@ for qget in iter(q.get, None): pass
 ```
 
 # Language
+
+### Built-ins
+* sorting
+```
+my_iterable.sort(reverse=True|False, key=_fun_returns_key)
+```
 
 ### Statements
 

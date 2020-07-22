@@ -6,7 +6,15 @@
 #		":ht" disables default error handling
 #		"h:t" indicates the -h flag takes an argument
 
-while getopts ":ht:" opt; do
+verbose=false
+
+function echo_v() {
+	if [ "${verbose}" = true ]; then
+		echo "${@}"
+	fi
+}
+
+while getopts ":hvt:" opt; do
 	case ${opt} in
 		h ) # process option a
 			echo 'this is the help menu'
@@ -14,7 +22,12 @@ while getopts ":ht:" opt; do
 		t ) # process option t
 			echo ${OPTARG}
 			;;
+		v ) # process option t
+			verbose=true
+			;;
 		\? ) echo "Usage: cmd [-h] [-t]"
 			;;
 	esac
 done
+
+echo_v 'script is now verbose'

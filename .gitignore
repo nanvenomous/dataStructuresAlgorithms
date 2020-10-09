@@ -6,3 +6,4 @@ execute
 /**/node_modules
 *.class
 **/.mypy_cache/
+**/.DS_Store

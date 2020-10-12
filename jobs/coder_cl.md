@@ -35,5 +35,16 @@ however seems after waiting a bit the server just works, looks like vscode in a 
 	- so here we are on the vscode [extension hello world page](https://code.visualstudio.com/api/get-started/your-first-extension)
 	- and now I have [my simple extension](https://github.com/mrgarelli/bug-fix-code-server) which makes a get request to googles homepage and display's that in a webview in a vscode editor tab
 	- I doubt opening the extension directory and pressing F5 will work to run the extension, so now we have to figure out where [code-server stores it's extensions](https://github.com/cdr/code-server/blob/v3.5.0/doc/FAQ.md#where-are-extensions-stored) but that directory doesn't exist so I install my [all time favorite extension](https://github.com/VSCodeVim/Vim) and boom the directory is there
+	![code-server extensions](./.rsrc/code_server_local_extensions.png)
 	- Unfortunately dropping the extension in the directory did not work so I did some reading on [how to pachage an extension](https://medium.com/@sanik.bajracharya/vscode-how-to-create-your-own-extension-pack-483385644c29) and generated a ```.vsix```. was able to install from file on my local code-insiders so worth a shot to try this in code-server.
-	- This is where I am currently stuck I have the simplest possible extension. lookig for the easiest way to test out an extension in code-server short of deploying my example extension. 
+	- Got an error here from a version mismatch (which is annoying because the extension would only install on code-insiders to begin with); anyway it's possible I just needed to downgrade the vscode version in ```package.json``` from the start so trying that
+	![version mismatch pic](./.rsrc/version_mismatch.png)
+	- After updating the version in the ```package.json``` & rebuilding/deploying the vscx, code-server takes the extension!
+	![ext installed](./.rsrc/installed_extension.png)
+	- I have to admit, at this point I'm getting pretty excited to test this, because if this works, then I don't see why one couldn't embed a matplotlib image in some html and serve it locally for code-server to consume... and It works!:
+	![working example](./.rsrc/working_example.png)
+	- so to conclude, I don't think this is actually anything wrong with code-server, and the user could use this snippit [here](https://github.com/mrgarelli/bug-fix-code-server/blob/master/src/extension.ts#L26) to accomplish his plot rendering. seems a lot better than ```asExternalUri()``` to begin with as can do everything within code-server without needing an extra browser.
+
+# Proposition
+- So I guess neither of these were really complicated issues, but my intent was to show some thought process and maybe inspire confidence that within a few weeks I could be regularly contributing. 
+- Please reach out if you think I could be a fit for the position. Would love to learn more about the team and the day to day. 

@@ -7,3 +7,5 @@ execute
 *.class
 **/.mypy_cache/
 **/.DS_Store
+
+python/django/articles/db.sqlite3

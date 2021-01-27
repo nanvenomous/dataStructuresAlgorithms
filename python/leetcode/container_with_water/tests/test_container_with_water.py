@@ -13,15 +13,15 @@ class TestContainerWithWater:
     def setup_method(cls):
         cls.subject = ContainerWithWater()
 
-    def test_solves_single_area(self):
-        self.subject.heights = mocks.one
-        self.subject.end = len(mocks.one)
-        self.subject.singleArea()
-        assert 3 == self.subject.maxArea
+    # @pytest.mark.skip()
+    # def test_solves_single_area(self):
+    #     self.subject.heights = mocks.one
+    #     self.subject.end = len(mocks.one)
+    #     self.subject.singleArea()
+    #     assert 3 == self.subject.curMax
 
     def assert_max_area(self, mock, ans):
-        self.subject.findArea(mock)
-        assert self.subject.maxArea == ans
+        assert self.subject.maxArea(mock) == ans
 
     def test_solves_for_biggest_area(self):
         self.assert_max_area(mocks.two, 49)

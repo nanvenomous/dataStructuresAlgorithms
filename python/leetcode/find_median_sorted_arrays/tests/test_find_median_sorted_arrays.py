@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from ..find_median_sorted_arrays import FindMedianSortedArray
+from ..find_median_sorted_arrays import FindMedianSortedArray, FindMedianSortedArray_SimplyUsingSort
 
 class mocks:
     class one: 
@@ -21,6 +21,31 @@ class answers:
     two = 2.00000
     three = 0.00000
     four = 1.00000
+
+class TestCombineSort:
+    @classmethod
+    def setup_method(cls):
+        cls.subject = FindMedianSortedArray()
+        cls.proven = FindMedianSortedArray_SimplyUsingSort()
+
+    @pytest.mark.skip()
+    def test_combineSorts_just_like_proven(self):
+        pass
+
+    def assert_combineSorts(self, ans, mock):
+        assert ans == self.subject._combineSort(mock.nums1, mock.nums2)
+
+    def test_combineSorts_one(self):
+        self.assert_combineSorts([1, 2, 3, 4], mocks.one)
+
+    def test_combineSorts_two(self):
+        self.assert_combineSorts([1, 2, 3], mocks.two)
+
+    def test_combineSorts_three(self):
+        self.assert_combineSorts([0, 0, 0, 0], mocks.three)
+
+    def test_combineSorts_four(self):
+        self.assert_combineSorts([1], mocks.four)
 
 class TestFindMedianSortedArray:
     @classmethod

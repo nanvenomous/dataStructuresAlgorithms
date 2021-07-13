@@ -15,6 +15,4 @@ class GridTravelerTab:
 					self.tab[xi + 1][yi] += elem
 				if xi < x and (yi + 1) < y:
 					self.tab[xi][yi + 1] += elem
-		print()
-		print(self.tab)
 		return self.tab[-1][-1]

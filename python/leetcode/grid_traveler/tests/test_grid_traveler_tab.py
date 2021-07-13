@@ -7,6 +7,14 @@ class mocks:
 		m = 3
 		n = 3
 		unique_traversals = 6
+	class three_two:
+		m = 3
+		n = 2
+		unique_traversals = 3
+	class eighteen:
+		m = 18
+		n = 18
+		unique_traversals = 2333606220
 
 class TestCanSum:
 	@classmethod
@@ -21,6 +29,12 @@ class TestCanSum:
 
 	def test_one(self):
 		self.assert_traversals_for(mocks.one)
+
+	def test_three_two(self):
+		self.assert_traversals_for(mocks.three_two)
+
+	def test_eighteen(self):
+		self.assert_traversals_for(mocks.eighteen)
 
 	@classmethod
 	def teardown_class(cls):

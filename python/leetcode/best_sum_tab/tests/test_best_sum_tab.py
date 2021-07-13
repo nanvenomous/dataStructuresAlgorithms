@@ -15,6 +15,10 @@ class mocks:
 		numbers = [2, 3, 5]
 		target = 8
 		expected = [3, 5]
+	class four:
+		numbers = [1, 2, 5, 25]
+		target = 100
+		expected = [25, 25, 25, 25]
 
 class TestBestSum:
 	@classmethod
@@ -33,6 +37,9 @@ class TestBestSum:
 
 	def test_three(self):
 		self.assert_best_sum_for_mock(mocks.three)
+
+	def test_four(self):
+		self.assert_best_sum_for_mock(mocks.four)
 
 	@classmethod
 	def teardown_class(cls):

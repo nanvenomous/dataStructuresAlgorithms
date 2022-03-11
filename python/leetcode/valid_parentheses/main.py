@@ -2,6 +2,7 @@
 "[([]{})]"
 
 b : np
+------
 [ : 
 ( : [
 [ : [(
@@ -20,16 +21,11 @@ else is opener
     add to np
 return not np
 """
+
+does_match = {'{': '}', '[': ']', '(': ')'}
 class Solution:
     @staticmethod
-    def _does_match(np, i):
-        if np == '[' and i == ']':
-                return True
-        elif np == '{' and i == '}':
-            return True
-        elif np == '(' and i == ')':
-            return True
-        return False
+    def _does_match(np, i): return i == does_match.get(np, '')
 
     def isValid(self, s: str) -> bool:
         if len(s) % 2 != 0:
